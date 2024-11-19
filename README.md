@@ -39,10 +39,54 @@
    
 ◈ **Високосный год**
 
-  ◌ *You`re entering a year, and programm check is it leap.*
+  ◌ *You`re entering a year, and program check is it leap.*
   
 ◈ **Восьмой знак**
 
-   ◌ *Actually, I myself still don`t understand what doing this strange programme🤦‍♂️. Something with eighth symbol in string.*
+   ◌ *Actually, I myself still don`t understand what doing this strange program🤦‍♂️. Something with eighth symbol in string.*
+   
+◈ **Делать зарядку нужно каждый день!**
+
+   ◌ *String 'Делать зарядку нужно каждую неделю.' is replaced to 'Делать зарядку нужно каждый день!'.*
+   
+◈ **Дизъюнкция**
+
+   ◌ *Couple of information about logic operation OR.*
+   
+◈ **Инверсия**
+
+   ◌ *Couple of information about logic operation NOT.*
+   
+◈ **Инициалы заданного имени + функция**
+
+   ◌ *If you look at the code you can find there function, that get initials from string of name.*
+   
+◈ **Квадрат найден**
+
+   ◌ *I think it`s quite useful program, especially in 8th grade. It finds root of a number.*
+    
+◈ **Конъюкция**
+
+   ◌ *Couple of information about logic operation AND.*
+     
+◈ **Кортеж (tuple)**
+
+   ◌ *Information about type of values 'tuple'.*
+    
+◈ **Крутой калькулятор**
+
+   ◌ *Calculator with colors, error exceptions and quality functions.*
+
+◈ **Куб найден**
+
+   ◌ *Program finds arithmetic cube root of a number.*
+
+◈ **Кубы**
+
+   ◌ *At first it print cubes of numbers, and than it raise your number in third degree.*
+   
+◈ **Ларёк**
+
+   ◌ *You can choose what you like and order.*
    
 **`. . . . . . . .`**
