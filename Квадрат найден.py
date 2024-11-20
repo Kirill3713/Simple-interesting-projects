@@ -7,9 +7,9 @@ blue = colorama.Fore.BLUE
 white = colorama.Fore.WHITE
 light_white = colorama.Fore.LIGHTWHITE_EX
 # Создаем функцию
-def find_squer(n:int) -> int:
+def find_root(n:int) -> int:
     """
-    Функция для нахождения квадратного корня.
+    Функция для нахождения арифметического квадратного корня.
     """
     # Объявляем переменную x
     x = 1
