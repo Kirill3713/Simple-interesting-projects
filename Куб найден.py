@@ -7,7 +7,7 @@ blue = colorama.Fore.BLUE
 light_cyan = colorama.Fore.LIGHTCYAN_EX
 white = colorama.Fore.WHITE
 light_white = colorama.Fore.LIGHTWHITE_EX
-# Создаем функцию
+# Определяем функцию
 def find_cube(n:int) -> int|None:
     """
     Функция для нахождения кубического арифметического корня целого числа.

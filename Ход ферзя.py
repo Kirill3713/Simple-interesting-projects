@@ -1,4 +1,4 @@
-# Создаем функцию
+# Определяем функцию
 def check_queens_move(x1:int|str, y1:int|str, x2:int|str, y2:int|str) -> bool|str:
     """
     Функция, проверяющая ход ферзя: возможен такой или нет.\n

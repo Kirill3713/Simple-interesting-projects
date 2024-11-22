@@ -6,7 +6,7 @@ cyan = colorama.Fore.CYAN
 light_white = colorama.Fore.LIGHTWHITE_EX
 blue = colorama.Fore.BLUE
 light_blue = colorama.Fore.LIGHTBLUE_EX
-# Создаем функцию
+# Определяем функцию
 def check_leap_year(year:int|str) -> bool|str:
     """
     Функция для проверки високосности года

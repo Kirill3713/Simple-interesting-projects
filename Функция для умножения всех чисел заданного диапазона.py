@@ -7,7 +7,7 @@ light_green = colorama.Fore.LIGHTGREEN_EX
 cyan = colorama.Fore.CYAN
 light_cyan = colorama.Fore.LIGHTCYAN_EX
 light_white = colorama.Fore.LIGHTWHITE_EX
-# Создаем функцию
+# Определяем функцию
 def multiply_range(start: int|float|str, end: int|float|str) -> int|str:
     """
     Функция для умножения всех целых чисел заданного диапазона.

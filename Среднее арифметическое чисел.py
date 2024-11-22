@@ -1,4 +1,4 @@
-# Создаем функцию
+# Определяем функцию
 def get_arithmetic_mean(*nums:int|float|str|list[int|float|str]|tuple[int|float|str]|set[int|float|str]) -> float|str:
     """
     Функция, вычисляющая среднее арифметическое чисел.

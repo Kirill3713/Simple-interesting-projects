@@ -1,4 +1,4 @@
-# Создаем функцию
+# Определяем функцию
 def divide_nums(a:int|float|str, b:int|float|str) -> float|str:
     """
     Функция для деления.

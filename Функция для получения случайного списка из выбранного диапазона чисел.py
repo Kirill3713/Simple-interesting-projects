@@ -3,7 +3,7 @@ import random
 import colorama
 red = colorama.Fore.RED
 reset = colorama.Fore.RESET
-# Создаем функцию
+# Определяем функцию
 def get_random_list(start:int, end:int, len:int) -> list[int]|str:
     """
     Функция для получения случайного списка из выбранного диапазона.

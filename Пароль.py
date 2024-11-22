@@ -13,7 +13,7 @@ special_symbols = "!@'£$%^&*()_+-+/*:~#/?.>,<\\`¬№;><=|™§×÷}[]‰✓✕
 lower_ru_alph = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 UPPER_RU_ALPH = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 symbs = (lower_en_alph, UPPER_EN_ALPH, numbers, special_symbols, lower_ru_alph, UPPER_RU_ALPH)
-# Создаем функцию
+# Определяем функцию
 def generate_password(length:int|str = 12) -> str|None:
     """
     Функция генерации пароля

@@ -6,7 +6,7 @@ cyan = colorama.Fore.CYAN
 blue = colorama.Fore.BLUE
 white = colorama.Fore.WHITE
 light_white = colorama.Fore.LIGHTWHITE_EX
-# Создаем функцию
+# Определяем функцию
 def find_root(n:int) -> int:
     """
     Функция для нахождения арифметического квадратного корня целого числа.
