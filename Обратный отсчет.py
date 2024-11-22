@@ -1,12 +1,20 @@
 # Создаем функцию
-def recursion(n:int) -> int:
+def recursion(n:int|float|str) -> int|str:
     """
     Функция для обратного отсчета.
     """
-    print(n)
-    if n == 1:
-        return 1
-    return recursion(n-1)
+    try:
+        try:
+            n = int(n)
+        except ValueError:
+            print("Введено некорректное значение!")
+            return
+        print(n)
+        if n == 1:
+            return 1
+        return recursion(n-1)
+    except RecursionError:
+        print("Введено некорректное значение")
 # Точка входа
 if __name__ == "__main__":
-    recursion(int(input('Введите число: ')))
+    recursion(input('Введите число: '))

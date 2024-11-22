@@ -1,5 +1,5 @@
 # Создаем функцию
-def get_arithmetic_mean(*nums:int|float|str|list[int|float|str]|tuple[int|float|str]|set[int|float|str]) -> float:
+def get_arithmetic_mean(*nums:int|float|str|list[int|float|str]|tuple[int|float|str]|set[int|float|str]) -> float|str:
     """
     Функция, вычисляющая среднее арифметическое чисел.
     """
@@ -13,11 +13,15 @@ def get_arithmetic_mean(*nums:int|float|str|list[int|float|str]|tuple[int|float|
                 list_of_int.append(float(num))
         except ValueError:
             return "Введено некорректное значение!"
+        except TypeError:
+            return "Введено некорректное значение!"
     else:
         try:
             for num in nums:
                 list_of_int.append(float(num))
         except ValueError:
+            return "Введено некорректное значение!"
+        except TypeError:
             return "Введено некорректное значение!"
     # Находим сумму всех значений
     sum = 0
@@ -35,5 +39,5 @@ if __name__ == "__main__":
     print(get_arithmetic_mean(2, "5"))
     print(get_arithmetic_mean([9, 7, "23", -23.5]))
     print(get_arithmetic_mean({8, 8, 8, 8, 9, 5.5555, "123"}))
-    print(get_arithmetic_mean((70, 77, 80, 88, 90, 9.9, "100")))
+    print(get_arithmetic_mean(((70, 77, 80), 88, 90, 9.9, "100")))
     print(get_arithmetic_mean())

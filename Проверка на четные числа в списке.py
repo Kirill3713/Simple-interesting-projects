@@ -1,5 +1,5 @@
 # Создаем функцию
-def has_even(list_1:list) -> bool:
+def has_even(list_1:list) -> bool|str:
     """
     Функция для проверки на наличие четных чисел в списке.
     """

@@ -1,5 +1,5 @@
 # Создаем функцию
-def divide_nums(a:int|float|str, b:int|float|str) -> float:
+def divide_nums(a:int|float|str, b:int|float|str) -> float|str:
     """
     Функция для деления.
     """
@@ -7,9 +7,9 @@ def divide_nums(a:int|float|str, b:int|float|str) -> float:
     try: # Пытаемся выполнить код
         result = float(a) / float(b)
     except ZeroDivisionError: # Исключение
-        print("Нельзя делить на ноль.")
+        return "Нельзя делить на ноль."
     except ValueError:
-        print("Функция деления работает только с числами.")
+        return "Функция деления работает только с числами."
     finally: # Код, который выполняется вконце, и в любом случае (есть ошибка, или ее нет).
         return result
 # Проверяем

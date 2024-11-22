@@ -1,5 +1,5 @@
 # Создаем функцию
-def turn_num_over(n:int) -> int:
+def turn_num_over(n:int) -> int|str:
     """
     Функция, переворачивающая натуральные числа.
     """    

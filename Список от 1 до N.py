@@ -1,5 +1,5 @@
 # Создаем функцию
-def get_list(n:int|float|str) -> list[int]:
+def get_list(n:int|float|str) -> list[int]|str:
     """
     Функция для получения списка натуральных чисел от одного до n. 
     """

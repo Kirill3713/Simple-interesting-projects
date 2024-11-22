@@ -1,4 +1,5 @@
-def odd_list(n:int|float|str) -> list[int]:
+# Определяем функцию
+def odd_list(n:int|float|str) -> list[int]|str:
     """
     Функция для создания списка нечетных натуральных чисел от одного до n.
     """
