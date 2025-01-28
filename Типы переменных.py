@@ -1,7 +1,10 @@
 # Создаем свой класс
 class Car():
     def __init__(self) -> None:
-        self.color = "red"
+        ...
+
+def my_func():
+    ...
 # Объявляем переменные и выводим типы переменных
 integer = 77
 print(type(integer)) # <class 'int'>
@@ -33,13 +36,17 @@ print(type(set_type)) # <class 'set'>
 alfa_romeo = Car()
 print(type(alfa_romeo)) # <class '__main__.Car'>
 
-print(type(alfa_romeo.color))
+ellipsis = ...
+print(type(ellipsis)) # <class 'ellipsis'>
 
 type_type = type(alfa_romeo)
 print(type(type_type)) # <class 'type'>
 
 func = print
 print(type(func)) # <class 'builtin_function_or_method'>
+
+my_func_type = my_func
+print(type(my_func_type)) # <class 'function'>
 
 method = alfa_romeo.__init__
 print(type(method)) # <class 'method'>

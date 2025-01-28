@@ -7,8 +7,8 @@ except ValueError:
     quit()
 # Проверка на равные числа
 if a == b and a == c and b == c:
-    print(3)
+    print("Все числа одинаковые.")
 elif a != b and a != c and b != c:
-    print(0)
+    print("Нет одинаковых чисел.")
 else:
-    print(2)
+    print("Только два числа одинаковые.")
