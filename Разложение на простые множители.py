@@ -20,7 +20,7 @@ def find_simple_divisors(n:int|str) -> str:
         else:
             d += 1
     simple_nums.append(d)
-    # Выодим результат
+    # Выводим результат
     print(f"Простые делители числа {num}:", end=" ")
     for i in range(len(simple_nums)):
         if i == len(simple_nums)-1:
@@ -29,8 +29,8 @@ def find_simple_divisors(n:int|str) -> str:
             print(simple_nums[i], end=", ")
 # Точка входа
 if __name__ == "__main__":
-    find_simple_divisors(216)
     find_simple_divisors(123)
     find_simple_divisors(108)
     find_simple_divisors(99991)
     find_simple_divisors(122)
+    find_simple_divisors(999998927000162629993763)

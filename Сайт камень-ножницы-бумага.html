@@ -1,0 +1,100 @@
+<!-- ВНИМАНИЕ!!! Этот код писал не я!!! -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .choices {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .choice {
+            margin: 10px;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background-color: #3498db;
+            color: white;
+            transition: transform 0.3s ease, background-color 0.3s;
+        }
+        .choice:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #score {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Камень, ножницы, бумага</h1>
+    <div class="choices">
+        <button class="choice" onclick="playGame('Камень')">Камень</button>
+        <button class="choice" onclick="playGame('Ножницы')">Ножницы</button>
+        <button class="choice" onclick="playGame('Бумага')">Бумага</button>
+    </div>
+    <p id="result">Выберите вариант!</p>
+    <p id="score">Ваш счёт: 0 | Счёт компьютера: 0</p>
+
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="lose-sound" src="lose.mp3"></audio>
+    <audio id="draw-sound" src="draw.mp3"></audio>
+
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+
+        function playGame(playerChoice) {
+            const choices = ["Камень", "Ножницы", "Бумага"];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+            let result = "";
+            if (playerChoice === computerChoice) {
+                result = "Ничья! 🤝";
+                playSound("draw-sound");
+            } else if (
+                (playerChoice === "Камень" && computerChoice === "Ножницы") ||
+                (playerChoice === "Ножницы" && computerChoice === "Бумага") ||
+                (playerChoice === "Бумага" && computerChoice === "Камень")
+            ) {
+                result = `Вы победили! 🎉 (Компьютер выбрал ${computerChoice})`;
+                playerScore++;
+                playSound("win-sound");
+            } else {
+                result = `Вы проиграли! 😢 (Компьютер выбрал ${computerChoice})`;
+                computerScore++;
+                playSound("lose-sound");
+            }
+
+            document.getElementById("result").innerText = result;
+            document.getElementById("score").innerText = `Ваш счёт: ${playerScore} | Счёт компьютера: ${computerScore}`;
+        }
+
+        function playSound(soundId) {
+            const sound = document.getElementById(soundId);
+            sound.play();
+        }
+    </script>
+</body>
+</html>
